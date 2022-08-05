@@ -64,7 +64,7 @@ const Login = () => {
     <div className="container w-50 mx-auto">
       <PageTitle title="Login"></PageTitle>
       <h2 className="text-primary text-center mt-2">Please Login</h2>
-      <Form onSubmit={handleSubmit}>
+      <Form className="bg-secondary py-5 px-3 my-3" onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
             ref={emailRef}
@@ -103,6 +103,11 @@ const Login = () => {
           Reset Password
         </button>{" "}
       </p>
+      <h4 className="text-warning">
+        Please login using google to be a varified user and get access to the
+        add service, manage service, orders page. Email varification doesn't
+        response sometimes.
+      </h4>
       <SocialLogin></SocialLogin>
       <ToastContainer />
     </div>
