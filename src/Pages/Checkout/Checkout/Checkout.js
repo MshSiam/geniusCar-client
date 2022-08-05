@@ -24,14 +24,16 @@ const Checkout = () => {
     }
     console.log(order)
 
-    axios.post(`http://localhost:4000/orders`, order).then((response) => {
-      const { data } = response
-      console.log(response)
-      if (data.insertedId) {
-        toast("Order Booked Successfull")
-        event.target.reset()
-      }
-    })
+    axios
+      .post(`https://geniuscarnew.herokuapp.com/orders`, order)
+      .then((response) => {
+        const { data } = response
+        console.log(response)
+        if (data.insertedId) {
+          toast("Order Booked Successfull")
+          event.target.reset()
+        }
+      })
   }
 
   return (
