@@ -1,3 +1,4 @@
+import logo from "../../../images/logo.png"
 import React from "react"
 
 const Footer = () => {
@@ -9,17 +10,17 @@ const Footer = () => {
         <div className="container p-4">
           <div className="row">
             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-              <h5 className="text-uppercase mb-4">OUR WORLD</h5>
+              <img className="mb-3" height={30} src={logo} alt="" />
 
               <ul className="list-unstyled mb-4">
                 <li>
-                  <a href="#!" className="text-white">
+                  <a href="/about" className="text-white">
                     About us
                   </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
-                    Collections
+                  <a href="/home#services" className="text-white">
+                    Services
                   </a>
                 </li>
                 <li>
